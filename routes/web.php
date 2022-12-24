@@ -1,5 +1,6 @@
 <?php
 
+use App\Http\Controllers\DataController;
 use App\Http\Controllers\Layout;
 use App\Http\Controllers\Mhs;
 use App\Http\Controllers\PegawaiAjaxController;
@@ -30,6 +31,7 @@ Route::get('/pegawai', function () {
     return view('pegawai.index');
 });
 Route::resource('pegawaiAjax', PegawaiAjaxController::class);
+Route::get('/data', [DataController::class, 'index'])->name('data');
 
 Route::controller(Layout::class)->group(function () {
     Route::get('/layout/home', 'home');

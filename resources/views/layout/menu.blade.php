@@ -32,5 +32,14 @@ with font-awesome or any other icon font library -->
                 </p>
             </a>
         </li>
+        <li class="nav-item">
+            <a href="{{ route('data') }}" class="nav-link">
+                <i class="nav-icon fas fa-users"></i>
+                <p>
+                    Data CRUD
+                    <i class="right fas fa-angle-right"></i>
+                </p>
+            </a>
+        </li>
     </ul>
 </nav>

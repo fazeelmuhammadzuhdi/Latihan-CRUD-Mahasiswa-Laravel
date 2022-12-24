@@ -14,6 +14,7 @@
     <link rel="stylesheet" href="{{ asset('/') }}plugins/fontawesome-free/css/all.min.css">
     <!-- Theme style -->
     <link rel="stylesheet" href="{{ asset('/') }}dist/css/adminlte.min.css">
+    <link rel="stylesheet" type="text/css" href="https://cdn.datatables.net/1.13.1/css/jquery.dataTables.css">
     @stack('after-style')
 </head>
 
@@ -250,8 +251,8 @@
         <!-- /.control-sidebar -->
     </div>
     <!-- ./wrapper -->
-
     <!-- jQuery -->
+    @stack('js')
     <script src="{{ asset('/') }}plugins/jquery/jquery.min.js"></script>
     <!-- Bootstrap 4 -->
     <script src="{{ asset('/') }}plugins/bootstrap/js/bootstrap.bundle.min.js"></script>
@@ -259,7 +260,7 @@
     <script src="{{ asset('/') }}dist/js/adminlte.min.js"></script>
     <!-- AdminLTE for demo purposes -->
     <script src="{{ asset('/') }}dist/js/demo.js"></script>
-   
+    @stack('after-js')
 </body>
 
 </html>
